@@ -1,0 +1,392 @@
+*{margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6,p{
+	margin:0;
+	padding:0;}
+ul{list-style:none;margin:0; padding:0;
+}
+p{font-size:14px;}
+body{font-family: 'Open Sans Condensed', sans-serif; letter-spacing:0.5px;}
+a{text-decoration:none;}
+.wrapper{float:left;width:100%;	max-width:1360px;}
+.inner{
+	margin:0 auto;
+	float:none;
+	max-width:1280px;
+	width:100%;
+	padding:40px 0;
+}
+.main-header{
+	background-image:url('images/slide-2.jpg');
+	background-size:100% auto;
+	background-repeat:no-repeat;
+	background-position:center;
+	min-height:420px;
+}
+.logo {display: inline-block;  width: 477px;}
+.logo img { float: left;  margin-right: 10px;}
+.logo h2 { color: #ffffff; display: inline-block; font-size: 65px;  font-weight: 600;}
+.menu { float: right; position: relative;}
+.menu a { color: #ffffff; display: inline-block; font-size: 28px;  margin-top: 12px;}
+.slider-text {float: none; margin: 0 auto; width: 44%;}
+.slider-text h2 { color: #ffffff; font-size: 45px; margin-top: 10%;}
+.slider-text h2:last-child { margin: 0; text-align: right;}
+.advantage { background: #82ca9c; color: #ffffff;  display: inline-block; width: 100%;}
+.main-advnt { display: inline-block;  width: 100%;}
+.main-advnt h2, .main-trans h2 { font-size: 32pt; font-weight: 600;}
+.box { display: table-cell; float: left; margin-top: 30px; text-align: center;  width: 25%;}
+.box i { color: #ffffff; font-size: 61pt;}
+.box p {  font-size: 22px;  margin-top: 21px;}
+.OTHER-SERVICES {  float: left;  width: 100%;}
+.Transportation {
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.39);
+  background-image: url("images/maintop.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: inline-block;
+  width: 100%;
+}
+.main-trans { color: rgb(255, 255, 255);}
+.main-trans p {
+  float: none;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 9px 0;
+  width: 85%;
+}
+.rd-btn a {
+    background: rgb(255, 133, 28) none repeat scroll 0 0;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 11px 41px;
+}
+.rd-btn {
+    display: inline-block;
+    margin-bottom: 14px;
+    text-align: center;
+    width: 100%;
+}
+.main-service, .main-OTHER-TOWING { display: inline-block;  width: 100%;}
+.main-service h2, .Testimonial h2 { font-size: 32pt; text-align: center;}
+.main-OTHER-TOWING h2 { font-size: 32pt;  margin-bottom: 30px; text-align: left;}
+.main-service .srvcis { float: left;  margin-top: 30px; text-align: center;  width: 25%;}
+.main-service .srvcis img {  width: 100%;}
+.srvcis p { font-size: 22px;  padding: 17px 0;}
+ul.other {float: left; width: auto;}
+ul.other li { display: list-item;}
+.dropdown {
+    background: rgba(0, 0, 0, 0.45) none repeat scroll 0 0;
+     position: absolute;
+    right: 27px;
+    top: 15px;
+    width: 188px;
+    z-index: 9999;
+}
+.dropdown a:hover {
+  background: rgba(128, 128, 128, 0.71) none repeat scroll 0 0;
+  float: left;
+  width: 95%;
+}
+.dropdown li:last-child a {
+  padding-bottom: 10px;
+}
+.dropdown li {
+  float: left;
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+.dropdown li a {
+  float: left;
+  font-size: 20pt;
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+.other li a {
+  background-image: url("images/arrow.png");
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0);
+  font-size: 23px;
+  padding: 4px 29px;
+  float:left;
+}
+.right-img {  float: right;}
+.right-img img { float: right; width: 100%;}
+.Testimonial {
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: rgba(255, 133, 28, 0.73);
+    background-image: url("images/testimonial.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+}
+.Testimonial h2 { color: rgb(255, 255, 255);}
+.test-text {
+    float: none;
+    margin: 30px auto;
+    text-align: center;
+    width: 72%;
+}
+.main-Testimonial {  float: left;  width: 100%;}
+.test-img {float: left; margin-bottom: 30px;  width: 100%;}
+.test-img ul { float: none; margin: 50px auto;  width: 297px;}
+.test-img ul li {  float: left;}
+.test-img > ul li a {float: left;padding: 0 6px; width: 100%;}
+.test-text p { color: rgb(255, 255, 255); font-size: 22px;}
+.map {  float: left;  width: 100%;}
+.map img {  float: left;  width: 100%;}
+.footer {
+    background: rgb(0, 0, 0) none repeat scroll 0 0;
+    float: left;
+    text-align: center;
+    width: 100%;
+}	
+
+.social-icon {
+    display: block;
+    float: none;
+    margin: 6px auto;
+    width: 300px;
+}
+.social-icon ul li {
+    float: left;
+    padding: 0 20px;
+}
+.social-icon ul li a {
+    background: rgb(128, 128, 128) none repeat scroll 0 0;
+    border-radius: 50%;
+    display: table-cell;
+    height: 60px;
+    vertical-align: middle;
+    width: 60px;
+}
+.social-icon i {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+.footer p {
+    color: rgb(255, 255, 255);
+    float: left;
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+/****************************    responsive style 1360 to 320    **************************/
+
+@media only screen and (max-width: 1340px) {
+
+.main-header {
+    background-size: cover;
+	padding-left: 10px;
+    padding-right: 10px;
+   }
+.slider-text {
+    width: 500px;
+}
+.menu {
+    float: right;
+    margin-top: 19px;
+}
+
+.main-advnt {
+    float: left;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    width: 97%;
+}
+.Transportation {
+      background-size: cover;
+}
+.main-trans {
+    margin: 0 auto;
+    width: 97%;
+}
+.main-service, .main-OTHER-TOWING {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    width: 97%;
+}
+}
+@media only screen and (max-width: 1140px) {
+.rd-btn {
+  margin-top: 2%;
+}
+}
+@media only screen and (max-width: 1100px) {
+
+.other li a {
+    background-position: 0 12px;
+}
+ul.other {
+    display: table-cell;
+    width: auto;
+}
+.right-img {
+  display: table-cell;
+  vertical-align: top;
+  float:none;
+}}
+@media only screen and (max-width: 680px) {
+.right-img {
+    display: inline-block;
+    float: none;
+    
+}
+.other li a {
+    background-position: 0 6px;
+    background-size: 14px auto;
+    font-size: 19px;
+    padding: 0 19px;
+}
+ul.other {
+    display: inline-block;
+    width: 100%;
+}
+ul.other li {
+  float: left;
+  height:50px;
+  width: 50%;
+}	
+	
+}
+@media only screen and (max-width: 640px) {
+	.main-service .srvcis {
+        width: 50%;
+}
+.test-text {
+        width: 100%;
+}	
+}
+@media only screen and (max-width: 540px) {
+.logo {
+    width: auto;
+}
+.logo h2 {
+    font-size: 36px;
+	}
+.logo img {
+       width: 49px;
+}
+.menu {
+    margin-top: 2px;
+}
+.slider-text h2 {
+    font-size: 32px;
+}
+.slider-text {
+    width: 360px;
+}
+
+}
+@media only screen and (max-width: 480px) {
+.box {
+     height: 161px;
+    width: 50%;
+}
+.main-OTHER-TOWING h2 {
+    font-size: 25pt;
+    text-align: center;
+}
+}
+@media only screen and (max-width: 380px) {
+	.slider-text h2:last-child {
+    text-align: center;
+}
+.test-text p {
+    font-size: 18px;
+}
+
+ul.other li {
+    float: left;
+    height: auto;
+    padding-bottom: 7px;
+    width: 100%;
+}
+.main-trans p {
+    font-size: 17px;
+    text-align: justify;
+    width: 98%;
+}
+.rd-btn {
+    margin-bottom: 0;
+    margin-top: 6%;
+}
+.slider-text {
+    margin-top: 35%;
+    text-align: center;
+    width: auto;
+}
+.main-service h2, .Testimonial h2 {
+    font-size: 25pt;
+   }
+  
+.main-service .srvcis {
+    width: 100%;
+}
+
+.SERVICES .inner {
+    padding-bottom: 0;
+}
+.slider-text h2 {
+    font-size: 26px;}
+.logo h2 {
+       font-size: 30px;
+}
+.logo img {
+       width: 45px;
+}
+.menu a {
+        margin-top: 5px;
+}
+.box {
+     height: 161px;
+    width: 100%;
+}
+.main-advnt h2, .main-trans h2 {
+    font-size: 25pt;
+    text-align: center;
+}
+.social-icon i {
+       font-size: 20px;
+}
+.social-icon {
+    display: block;
+    float: none;
+    margin: 12px auto 0;
+    text-align: center;
+    width: 174px;
+}
+.social-icon ul li a {
+    height: 40px;
+    width: 40px;
+}
+.social-icon ul li {
+  float: left;
+  padding: 0 8px;
+}
+.footer p {
+    font-size: 16px;
+    }
+	.dropdown {
+    background: rgba(0, 0, 0, 0.86) none repeat scroll 0 0;}
+}
+@media only screen and (max-width: 360px) {
+.main-OTHER-TOWING h2 {
+    font-size: 22pt;
+    }
+	.test-text p {
+     font-size: 16px;
+}
+
+}
