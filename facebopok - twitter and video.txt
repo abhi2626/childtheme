@@ -1,0 +1,18 @@
+facebook:
+
+To get the code to show the like button,share button,comments,posts etc. just use the following link and select required plugin and get its code.
+https://developers.facebook.com/docs/plugins
+
+
+To show the facebook page feed on our website..just go to following link...fill the requirements and click on 'Get Code' button.. The popup will be shown on clicking having the two code..just copy these two code and place where to show the posts on our website.
+https://developers.facebook.com/docs/plugins/page-plugin
+______________________________________________________________________________________________________________
+twitter:
+
+To add a twitter feed in website. just go to a link https://twitter.com/settings/widgets create a new widget there.. save the widget and copy the html code generated below.. and paste it on website where the feed is needed.
+_____________________________________________________________________________
+video:
+
+<video data-fill-mode="fill" data-loop="true" data-mute="true" data-autopause="false" class="ms-slide-bgvideo" style="opacity: 1; width: 1343px; height: 671.5px; margin-top: -89px; margin-left: 0px;">
+		<source type="video/webm" src="https://rejuveneticsglobal.com/bannervideo.webm"></source>
+	</video>
