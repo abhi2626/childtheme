@@ -1,0 +1,149 @@
+   	<ul><li><a href="<?php echo site_url();?>">Home</a> </li>
+
+*************************************************************************
+<?php $args=array('post_per_page'=>5,'offset'=>0,'category'=>14);
+ $myposts=get_posts($args);
+ foreach($myposts as $post):setup_postdata($post);?>  
+  
+  <!--start con2 --> <div class="con2">
+                   <div class="design"><img src="<?php $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), array(300, 300), false, ''); echo $src[0]; ?>" /></div><!--design logo-->
+          <!--start text--> <div class="text">
+                       <h2><?php the_title();?></h2>
+                       <p><font color="#000000"><?php echo substr(get_the_excerpt(), 0,90);/*?><?php echo get_post_meta(196, 'web', true);?><?php */?><!--Lorem ipsum dolor sit amet, consec tetuer adipiscing eliraesent vetibulum molestie lacuenean nonum--></font></p>
+           <!-- end text<!----> </div>
+                          <div class="button"><a href="<?php echo get_permalink(); ?>"><input type="button" value="Read More" /></a></div>
+                           </div><!--end con2-->
+                           
+                 <?php endforeach;
+                      wp_reset_postdata();?>
+                      
+                     
+
+
+
+
+
+
+ <?php $args=array('post_per_page'=>5,'offset'=>0,'category'=>23);
+ $myposts=get_posts($args);
+ foreach($myposts as $post):setup_postdata($post);?>  
+  
+  <!--start con2 --> <div class="con2">
+                   <div class="design"><img src="<?php $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), array(300, 300), false, ''); echo $src[0]; ?>" /></div><!--design logo-->
+          <!--start text--> <div class="text">
+                       <h2><?php the_title();?></h2>
+                       <p><font color="#000000"><?php the_content();?><!--Lorem ipsum dolor sit amet, consec tetuer adipiscing eliraesent vetibulum molestie lacuenean nonum--></font></p>
+           <!-- end text<!----> </div>
+                          <div class="button"><a href="<?php echo get_permalink(); ?>"><input type="button" value="Read More" /></a></div>
+                           </div><!--end con2-->
+                           
+                 <?php endforeach;
+                      wp_reset_postdata();?>
+ *******************************************************************************
+       
+
+<?php get_sidebar( 'main' ); ?> 
+**********************************************************************************
+
+
+To get the custom field in code write the following code
+
+ <?php echo get_post_meta($post->ID, 'key_name', true); ?>
+
+in this code we only need to change the key name as required all other code will remain same             
+****************************************************************
+This function is used in the title tag                                                <?php wp_title( '|', true, 'right' ); ?>
+
+This function is used in the header section to give the name of the site               
+ <?php bloginfo( 'name' ); ?>
+
+
+This function is used in the header section to give the short discription of the site  under name
+ <?php bloginfo( 'description' ); ?>
+these function will help to change dynamically
+*******************************************************************
+           <?php 
+if ( is_home() ) {
+    // This is a homepage here we will show the slider
+
+
+$page_id = 98;
+$page_data = get_page( $page_id );
+ $content = $page_data->post_content;       
+  echo $page_data->post_content;  
+  } else {
+    // This is not a homepage
+}
+   ?>
+**********************************
+      <?php
+$page_id = 79;
+$page_data = get_page( $page_id );
+ $content = $page_data->post_content;       
+  echo $page_data->post_content; 
+echo $page_data->post_title;
+echo $page_data->post_excerpt;
+     
+   ?>
+
+****************************************************************
+// the menu are called as the name given in admin panel like headermenu and footer_menu
+<?php wp_nav_menu( array( 'menu' => 'headermenu' ) );?>
+<?php wp_nav_menu( array( 'menu' => 'footer_menu' ) );?>
+
+***********************************
+// to call excerpt. first we have to give the full content in content area in post. and should give the content in //excerpt area which is used to show in front end before the "read more" button
+ 
+<?php
+$page_id = 86;
+$page_data = get_page( $page_id );?>
+
+<p><?php echo $page_data->post_excerpt;?><a href="http://pantree.com/dev/?p=86">read more</a></p>
+****************************************************************************************
+In admin panel, in the content area of page we would have to give the static whole path of image to show it. to get the static path we should echo the "<?php bloginfo('template_url');?>" the printing value of this needed to prepand with the remaining path of image.
+**************************************************************************
+in woocommerce in order to show the products on the pages we would first create a category. add products under that category then we will call that category in page by short code as
+
+[product_category category=" category name"]
+
+*********************************************************************************************************************************
+In woocommerce arhieve_product.php is a main file in which all the product is shown in first page.
+when we install the woocommerce.it generates the "shop" page by default. this page holds all the products that is newly added. we can use this page by renaming to show the products.
+
+*********************************************************************************************************************************
+sothink swf decompiler is a software to edit the flash file.like if we want to edit text on images or just image or text then it is useful.
+*******************************************************************
+user meta plugin.for login purpose.we will block the all the pages that are not needed to show if the user not logged in.
+when we will block the page from admin.then when we will open that page in user panel without login then it will ask for login first.
+************************************************************************************************************************************
+code to register side bar
+
+add in function.php
+__________________________________________________________
+register_sidebar(array(
+  'name' => __( 'Right Hand Sidebar' ),
+  'id' => 'right-sidebar',
+  'description' => __( 'Widgets in this area will be shown on the right-hand side.' ),
+  'before_title' => '<h1>',
+  'after_title' => '</h1>'
+));
+_________________________________________________________
+code to call sidebar
+
+<?php get_sidebar( 'Right Hand Sidebar' );?>
+
+**************************************************************************************************************************************
+in style.css file we can set the image as 
+
+body
+{
+background-image:url("images/header.png");
+background-repeat:no-repeat;
+} 
+
+*************************************************************************************************************************************
+we can not use "bloginfo('template_url');" in content area of page in admin page.we have to give the full address of image as
+http/www.pantree.com/dev/themes/images/header.png etc.
+*************************************************************************************************************************************
+in wordpress functions. we can also put the html tags along with contents like in place of "add to cart" in this function ("add to cart",woocommerce).
+if we want to show the image of "buy now"  at the place of "add to cart" then we can put <img src="path"> in place to "add the cart".
