@@ -1,0 +1,30 @@
+<div class="parentbox">
+    <div class="childbox">
+        I shall be in the middle of parentbox regardless of its size!
+    </div>
+
+
+.parentbox {
+    width:500px;
+    height:400px;
+    border-style:solid;
+    
+    text-align: center;  /* align the inline(-block) elements horizontally */
+    font: 0/0 a;         /* remove the gap between inline(-block) elements */
+}
+
+.parentbox:before {      /* create a full-height inline block pseudo-element */
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle; /* vertical alignment of the inline element */
+    height: 100%;
+}
+
+.childbox {
+    display: inline-block;
+    vertical-align: middle;   /* vertical alignment of the inline element */
+    font: 16px/1 Arial, sans-serif;  /* reset the font property */
+    
+    padding: 5px;
+    border: 2px solid black;
+}
