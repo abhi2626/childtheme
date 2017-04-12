@@ -147,3 +147,10 @@ http/www.pantree.com/dev/themes/images/header.png etc.
 *************************************************************************************************************************************
 in wordpress functions. we can also put the html tags along with contents like in place of "add to cart" in this function ("add to cart",woocommerce).
 if we want to show the image of "buy now"  at the place of "add to cart" then we can put <img src="path"> in place to "add the cart".
+
+
+
+font direct google
+
+
+https://fonts.google.com/
